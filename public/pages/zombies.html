@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>The Last Prey - Zombies</title>
+  <link rel="stylesheet" href="../style.css"/>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet"/>
+</head>
+<body>
+  <div class="container">
+    <div class="navbar-wrapper">
+    <div id="navbarContainer">
+      <header class="navbar">
+        <div class="navbar-left">
+          <a href="../index.html">
+          <img src="../assets/ava.png" alt="The Last Prey" class="navbar-logo" />
+          </a>  
+          <nav class="navbar-menu">
+            <a href="news.html">News</a>
+            <div class="dropdown">
+              <a class="dropdown-toggle">Game Modes</a>
+              <div class="dropdown-menu">
+                <a href="coop.html">Co-Op</a>
+                <a href="battle-royale.html">Battle Royale</a>
+                <a href="survival.html">Survival</a>
+              </div>
+            </div>
+            <div class="dropdown">
+              <a class="dropdown-toggle">Characters</a>
+              <div class="dropdown-menu">
+                <a href="main-characters.html">Main Characters</a>
+                <a href="zombies.html">Zombies</a>
+                <a href="bosses.html">Bosses</a>
+              </div>
+            </div>
+            <a href="media.html">Media</a>
+            <a href="about.html">About</a>
+          </nav>
+        </div>
+        <div class="navbar-right">
+          <img class="register-button" src="../assets/registerButton.png" id="openRegisterImg"></img>
+          <!-- <button class="icon-btn login" title="Log in">REGISTER</button> -->
+          <a href="#" class="cta-button angled">Download</a>
+        </div>
+      </header>
+    </div>
+    </div>
+    <div id="objectsContainer">
+  <div class="character-slider-wrapper">
+    <button class="arrow left-arrow" onclick="slideCharacter(-1)">&#10094;</button>
+    <div class="character-slider">
+      <div class="character-slide">
+        <section class="character-abilities-section">
+            <div class="character-header">
+              <img src="../assets/zombie5 icon_no_bg.png" alt="Character Portrait" class="character-portrait" />
+              <div class="character-title">
+                <h2>Drifters</h2>
+                <button class="base-stats-btn">BASE STATS</button>
+              </div>
+            </div>
+            <div class="abilities-container">
+              <div class="ability-list">
+                <h3>Profile</h3>
+                <div class="ability-entry">
+                  <span class="key-icon">Estimated Age</span>
+                  <span class="ability-name">Between 20s-30s (Pre-Outbreak)</span>
+                </div>
+                <div class="ability-entry">
+                  <span class="key-icon">Host Origin</span>
+                  <span class="ability-name">Unknown</span>
+                </div>
+                <div class="ability-entry">
+                  <span class="key-icon">Infection Source</span>
+                  <span class="ability-name">Bite Transmission</span>
+                </div>
+                <div class="ability-entry">
+                  <span class="key-icon">Threat Level</span>
+                  <span class="ability-name">Low</span>
+                </div>
+                <div class="ability-entry">
+                  <span class="key-icon">Behavior</span>
+                  <span class="ability-name">Wanders in groups</span>
+                </div>
+                <div class="ability-entry">
+                  <span class="key-icon">Weakness</span>
+                  <span class="ability-name">Physical Damage</span>
+                </div>
+              </div>
+              <div class="ability-backstory-panel">
+                <h2 class="ability-title">OVERWIEW</h2>
+                <p class="ability-subtitle">"Can't believe those were once humans"</p>
+                <div class="backstory-content">
+                  <p>
+                    Drifters are the earliest and most widespread form of infected, created through direct <strong>bite transmission</strong>. Once infected, hosts deteriorate rapidly, both mentally and physically, until little remains but primal aggression and decaying muscle memory.
+                    <br/><br/>
+                    Their senses are dulled, but not absent. Being in sight of one can provoke a surge of aggression. While typically slow and disoriented, Drifters become dangerous in groups, often overwhelming targets through sheer volume and relentlessness.
+                    <br/><br/>
+                    Field units are advised to dispatch on sight. Even a single bite is fatal — turning a healthy human into a carrier in under 90 seconds. Treat all contact as high-risk.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </section>
+        </div>
+      <div class="character-slide">
+        <section class="character-abilities-section">
+          <div class="character-header">
+            <img src="../assets/zombie1 icon_no_bg.png" alt="Character Portrait" class="character-portrait" />
+            <div class="character-title">
+              <h2>Sentinels</h2>
+              <button class="base-stats-btn">BASE STATS</button>
+            </div>
+          </div>
+          <div class="abilities-container">
+            <div class="ability-list">
+              <h3>Profile</h3>
+              <div class="ability-entry">
+                <span class="key-icon">Estimated Age</span>
+                <span class="ability-name">Betwenn 30s–40s (Pre-Outbreak)</span>
+              </div>
+              <div class="ability-entry">
+                <span class="key-icon">Host Origin</span>
+                <span class="ability-name">Law Enforcement</span>
+              </div>
+              <div class="ability-entry">
+                <span class="key-icon">Infection Source</span>
+                <span class="ability-name">Bite Transmission</span>
+              </div>
+              <div class="ability-entry">
+                <span class="key-icon">Threat Level</span>
+                <span class="ability-name">Moderate</span>
+              </div>
+              <div class="ability-entry">
+                <span class="key-icon">Behavior</span>
+                <span class="ability-name">Aggressive, Territorial</span>
+              </div>
+              <div class="ability-entry">
+                <span class="key-icon">Weakness</span>
+                <span class="ability-name">Piercing Bullets</span>
+              </div>
+            </div>
+            <div class="ability-backstory-panel">
+              <h2 class="ability-title">OVERVIEW</h2>
+              <p class="ability-subtitle">"They used to serve and protect. Now they just kill."</p>
+              <div class="backstory-content">
+                <p>
+                  Sentinels are infected former law enforcement officers, identified by remnants of tactical gear and uniforms. Unlike Drifters, Sentinels retain muscle coordination, limited tactical memory, and a strong predatory focus on perceived threats.
+                  <br/><br/>
+                  Their ballistic vests and helmets make them far more resilient to conventional firepower. Some even instinctively navigate terrain or patrol areas they were once assigned to.
+                  <br/><br/>
+                  Field units are advised to engage from a distance. Close engagement is strongly discouraged unless there is no other option. Sentinels are fewer in number but vastly more dangerous.
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+      <div class="character-slide">
+        <section class="character-abilities-section">
+          <div class="character-header">
+            <img src="../assets/zombie_0014_Layer-2.png" alt="Character Portrait" class="character-portrait" />
+            <div class="character-title">
+              <h2>Strays</h2>
+              <button class="base-stats-btn">BASE STATS</button>
+            </div>
+          </div>
+          <div class="abilities-container">
+            <div class="ability-list">
+              <h3>Profile</h3>
+              <div class="ability-entry">
+                <span class="key-icon">Estimated Age</span>
+                <span class="ability-name">Between 20s–30s (Pre-Outbreak)</span>
+              </div>
+              <div class="ability-entry">
+                <span class="key-icon">Host Origin</span>
+                <span class="ability-name">Military Personnel</span>
+              </div>
+              <div class="ability-entry">
+                <span class="key-icon">Infection Source</span>
+                <span class="ability-name">Bite Transmission</span>
+              </div>
+              <div class="ability-entry">
+                <span class="key-icon">Threat Level</span>
+                <span class="ability-name">Moderate</span>
+              </div>
+              <div class="ability-entry">
+                <span class="key-icon">Behavior</span>
+                <span class="ability-name">Aggressive, Coordinated</span>
+              </div>
+              <div class="ability-entry">
+                <span class="key-icon">Weakness</span>
+                <span class="ability-name">Piercing Bullets</span>
+              </div>
+            </div>
+            <div class="ability-backstory-panel">
+              <h2 class="ability-title">OVERVIEW</h2>
+              <p class="ability-subtitle">"We used to fight along, now we fight to kill them."</p>
+              <div class="backstory-content">
+                <p>
+                  Strays are infected former soldiers highly dangerous remnants of military units caught during the first wave.
+                  <br/><br/>
+                  While most infected stagger blindly, Strays often call for their allies to take on you together. Their muscle memory and gear make them fast, relentless, and difficult to bring down with standard rounds.
+                  <br/><br/>
+                  Use armor-piercing ammunition and keep your distance. Strays may not be able to use guns anymore, but they still move like killers. Engagement is classified as high-risk, especially in enclosed environments.
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+      <div class="character-slide">
+        <section class="character-abilities-section">
+          <div class="character-header">
+            <img src="../assets/zombie2 icon_no_bg.png" alt="Character Portrait" class="character-portrait" />
+            <div class="character-title">
+              <h2>Corroders</h2>
+              <button class="base-stats-btn">BASE STATS</button>
+            </div>
+          </div>
+          <div class="abilities-container">
+            <div class="ability-list">
+              <h3>Profile</h3>
+              <div class="ability-entry">
+                <span class="key-icon">Estimated Age</span>
+                <span class="ability-name">Unknown (Mutated)</span>
+              </div>
+              <div class="ability-entry">
+                <span class="key-icon">Host Origin</span>
+                <span class="ability-name">Engineered Drifter</span>
+              </div>
+              <div class="ability-entry">
+                <span class="key-icon">Infection Source</span>
+                <span class="ability-name">Bite + Mutagen Exposure</span>
+              </div>
+              <div class="ability-entry">
+                <span class="key-icon">Threat Level</span>
+                <span class="ability-name">High</span>
+              </div>
+              <div class="ability-entry">
+                <span class="key-icon">Behavior</span>
+                <span class="ability-name">Ranged, Unpredictable</span>
+              </div>
+              <div class="ability-entry">
+                <span class="key-icon">Weakness</span>
+                <span class="ability-name">Explosives / Heavy Fire</span>
+              </div>
+            </div>
+            <div class="ability-backstory-panel">
+              <h2 class="ability-title">OVERVIEW</h2>
+              <p class="ability-subtitle">"They're experimenting on these things?"</p>
+              <div class="backstory-content">
+                <p>
+                  Corroders are among the first successful attempts to mutate baseline Drifters into ranged bioweapons. Their bodies have been chemically altered to generate and expel volatile acid capable of melting flesh.
+                  <br/><br/>
+                  Heavily muscled and unnervingly fast, Corroders close distance quickly but prefer to hang back and bombard targets from mid-range. Their spittle is accurate, corrosive, and extremely lethal — avoid line of sight at all costs.
+                  <br/><br/>
+                  Due to increased resilience and erratic behavior, standard rounds are inefficient. Field units are advised to use explosives or concentrated fire. Do not approach alone.
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+      <div class="character-slide">
+        <section class="character-abilities-section">
+          <div class="character-header">
+            <img src="../assets/zombie3 icon_no_bg.png" alt="Character Portrait" class="character-portrait" />
+            <div class="character-title">
+              <h2>Maulers</h2>
+              <button class="base-stats-btn">BASE STATS</button>
+            </div>
+          </div>
+          <div class="abilities-container">
+            <div class="ability-list">
+              <h3>Profile</h3>
+              <div class="ability-entry">
+                <span class="key-icon">Estimated Age</span>
+                <span class="ability-name">Unknown (Mutated)</span>
+              </div>
+              <div class="ability-entry">
+                <span class="key-icon">Host Origin</span>
+                <span class="ability-name">Engineered Drifter</span>
+              </div>
+              <div class="ability-entry">
+                <span class="key-icon">Infection Source</span>
+                <span class="ability-name">Bite + Steroid Mutagen</span>
+              </div>
+              <div class="ability-entry">
+                <span class="key-icon">Threat Level</span>
+                <span class="ability-name">High</span>
+              </div>
+              <div class="ability-entry">
+                <span class="key-icon">Behavior</span>
+                <span class="ability-name">Hyper-Aggressive, Melee Focused</span>
+              </div>
+              <div class="ability-entry">
+                <span class="key-icon">Weakness</span>
+                <span class="ability-name">Fire</span>
+              </div>
+            </div>
+            <div class="ability-backstory-panel">
+              <h2 class="ability-title">OVERVIEW</h2>
+              <p class="ability-subtitle">"You can't outrun it. You outgun it"</p>
+              <div class="backstory-content">
+                <p>
+                  Maulers are the result of mutagenic muscle enhancement experiments on base Drifters. Engineered for close-quarters domination, they display overwhelming strength and thickened skin. Their clawed hands and elongated limbs allow them to dismember targets in seconds.
+                  <br/><br/>
+                  Unlike Corroders, Maulers don’t rely on range. They charge with erratic bursts of speed and smash through obstacles. Standard barriers offer minimal resistance.
+                  <br/><br/>
+                  Field units are advised to deploy incendiary rounds or flame-based weapons. Their tissues, while dense, react violently to heat — fire is one of the few methods that can ensure permanent neutralization.
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+    </div>
+    <button class="arrow right-arrow" onclick="slideCharacter(1)">&#10095;</button>
+  </div>
+  </div>
+  </div>
+    <section class="background">
+      <img src="../assets/BackgroundIMG.png" alt="Landing" class="background-img" />
+    </section>
+
+    <div class="background-overlay"></div>
+    
+
+    <!-- Login/Register form section (initially hidden) -->
+    <div id="overlay" class="overlay hidden"></div>
+    <div id="login-form" class="form-wrapper hidden">
+      <button id="close-login" class="close-btn">&times;</button>
+      <h1 class="logo">The Last Prey</h1>
+      <p class="subtitle">Register to join the survival</p>
+
+      <input type="text" id="inputField3" placeholder="Email" />
+      <input type="text" id="inputField" placeholder="Username" />
+      <input type="password" id="inputField2" placeholder="Password" />
+
+      <button onclick="registerUser()" class="registerButton">Register</button>
+      <p id="message" class="message"></p>
+    </div>
+
+  <script>
+  const slider = document.querySelector(".character-slider");
+  let slides = document.querySelectorAll(".character-slide");
+
+  let currentSlide = 1; // Start at first real slide (after clone)
+  let isTransitioning = false;
+
+  // Clone first and last slide
+  const firstClone = slides[0].cloneNode(true);
+  const lastClone = slides[slides.length - 1].cloneNode(true);
+
+  slider.appendChild(firstClone);
+  slider.insertBefore(lastClone, slides[0]);
+
+  // Update slides NodeList after cloning
+  slides = document.querySelectorAll(".character-slide");
+
+  // Set initial position
+  slider.style.transform = `translateX(-${currentSlide * 100}%)`;
+
+  function slideCharacter(direction) {
+    if (isTransitioning) return; // Prevent spamming clicks
+    isTransitioning = true;
+
+    currentSlide += direction;
+    slider.style.transition = "transform 0.5s ease-in-out";
+    slider.style.transform = `translateX(-${currentSlide * 100}%)`;
+
+    slider.addEventListener("transitionend", handleLoop, { once: true });
+  }
+
+  function handleLoop() {
+    if (currentSlide === slides.length - 1) {
+      // At clone of first slide — jump to real first
+      slider.style.transition = "none";
+      currentSlide = 1;
+      slider.style.transform = `translateX(-${currentSlide * 100}%)`;
+    } else if (currentSlide === 0) {
+      // At clone of last slide — jump to real last
+      slider.style.transition = "none";
+      currentSlide = slides.length - 2;
+      slider.style.transform = `translateX(-${currentSlide * 100}%)`;
+    }
+    isTransitioning = false;
+  }
+  function scalePage() {
+    if (window.innerWidth >= 1920) return;
+    const wrapper = document.getElementById('objectsContainer');
+    const devlogSection = document.querySelector('.character-slider-wrapper');
+
+    if (window.innerWidth <= 600) {
+      // Reset scale & spacing on small screens
+      wrapper.style.transform = 'scale(1)';
+      wrapper.style.transformOrigin = 'top left';
+      document.body.style.height = 'auto';
+      devlogSection.style.paddingTop = '100px';
+      devlogSection.style.marginBottom = '0px';
+      return;
+    }
+
+    const baseWidth = 1920;
+    const currentWidth = window.innerWidth;
+    const scale = Math.min(1, currentWidth / baseWidth);
+
+    // Apply scale with transform origin left top
+    wrapper.style.transformOrigin = 'top left';
+    wrapper.style.transform = `scale(${scale})`;
+
+    // wrapper.style.margin = '0 auto';
+
+    const scaledHeight = wrapper.offsetHeight * scale;
+    document.body.style.height = `${scaledHeight}px`;
+
+    const basePadding = 100;
+    const scaledPadding = basePadding / scale;
+    devlogSection.style.paddingTop = `${scaledPadding}px`;
+    
+
+    const pullUp = (1 - scale) * 929; 
+    devlogSection.style.marginBottom = `-${pullUp}px`;
+  }
+
+  window.addEventListener('load', scalePage);
+  window.addEventListener('resize', scalePage);
+</script>
+
+  <script src="./javascript/scaler.js"></script>
+
+  <script src="../script.js"></script>
+</body>
+</html>

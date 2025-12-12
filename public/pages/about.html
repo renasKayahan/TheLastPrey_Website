@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>The Last Prey - About</title>
+  <link rel="stylesheet" href="../style.css"/>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet"/>
+</head>
+<body>
+  <div class="container">
+    <div class="navbar-wrapper">
+      <header class="navbar">
+        <div class="navbar-left">
+          <a href="../index.html">
+          <img src="../assets/ava.png" alt="The Last Prey" class="navbar-logo" />
+          </a>  
+          <nav class="navbar-menu">
+            <a href="news.html">News</a>
+            <div class="dropdown">
+              <a class="dropdown-toggle">Game Modes</a>
+              <div class="dropdown-menu">
+                <a href="coop.html">Co-Op</a>
+                <a href="battle-royale.html">Battle Royale</a>
+                <a href="survival.html">Survival</a>
+              </div>
+            </div>
+            <div class="dropdown">
+              <a class="dropdown-toggle">Characters</a>
+              <div class="dropdown-menu">
+                <a href="main-characters.html">Main Characters</a>
+                <a href="zombies.html">Zombies</a>
+                <a href="bosses.html">Bosses</a>
+              </div>
+            </div>
+            <a href="media.html">Media</a>
+            <a href="about.html">About</a>
+          </nav>
+        </div>
+        <div class="navbar-right">
+          <img class="register-button" src="../assets/registerButton.png" id="openRegisterImg"></img>
+          <!-- <button class="icon-btn login" title="Log in">REGISTER</button> -->
+          <a href="#" class="cta-button angled">Download</a>
+        </div>
+      </header>
+    </div>
+    <section class="background">
+      <img src="../assets/BackgroundIMG.png" alt="Landing" class="background-img" />
+    </section>
+    <div class="background-overlay"></div>
+    
+
+    <!-- Login/Register form section (initially hidden) -->
+    <div id="overlay" class="overlay hidden"></div>
+    <div id="login-form" class="form-wrapper hidden">
+      <button id="close-login" class="close-btn">&times;</button>
+      <h1 class="logo">The Last Prey</h1>
+      <p class="subtitle">Register to join the survival</p>
+
+      <input type="text" id="inputField3" placeholder="Email" />
+      <input type="text" id="inputField" placeholder="Username" />
+      <input type="password" id="inputField2" placeholder="Password" />
+
+      <button onclick="registerUser()" class="registerButton">Register</button>
+      <p id="message" class="message"></p>
+    </div>
+
+  </div>
+
+  <script src="../script.js"></script>
+</body>
+</html>

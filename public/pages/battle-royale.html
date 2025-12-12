@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>The Last Prey - Battle Royale</title>
+  <link rel="stylesheet" href="../style.css"/>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet"/>
+</head>
+<body>
+  <div class="container">
+    <div class="navbar-wrapper">
+        <div id="navbarContainer">
+      <header class="navbar">
+        <div class="navbar-left">
+          <a href="../index.html">
+          <img src="../assets/ava.png" alt="The Last Prey" class="navbar-logo" />
+          </a>  
+          <nav class="navbar-menu">
+            <a href="news.html">News</a>
+            <div class="dropdown">
+              <a class="dropdown-toggle">Game Modes</a>
+              <div class="dropdown-menu">
+                <a href="coop.html">Co-Op</a>
+                <a href="battle-royale.html">Battle Royale</a>
+                <a href="survival.html">Survival</a>
+              </div>
+            </div>
+            <div class="dropdown">
+              <a class="dropdown-toggle">Characters</a>
+              <div class="dropdown-menu">
+                <a href="main-characters.html">Main Characters</a>
+                <a href="zombies.html">Zombies</a>
+                <a href="bosses.html">Bosses</a>
+              </div>
+            </div>
+            <a href="media.html">Media</a>
+            <a href="about.html">About</a>
+          </nav>
+        </div>
+        <div class="navbar-right">
+          <img class="register-button" src="../assets/registerButton.png" id="openRegisterImg"></img>
+          <!-- <button class="icon-btn login" title="Log in">REGISTER</button> -->
+          <a href="#" class="cta-button angled">Download</a>
+        </div>
+        
+      </header>
+      </div>
+    </div>
+    </div>
+     <div class="containercoop">
+    <section class="coop-text">
+      <div class="text_background_overlay"></div>
+      <h1>placeholder Text <br> Co-op Mode</h1>
+      <p><br><big>Join Us Now!</big> 
+        <br><br>
+        <small><small>Welcome to the Marvel Rivals Partner Hub! <br><br>
+        If you are interested in creating content for Marvel Rivals through streams, <br>videos, graphics, and articles then we may be able to support you in this endeavor. <br><br>
+        Our Partner Program is tailored to help you reach new heights as a creator. <br>No matter your skill level, we can provide resources to help you produce incredible content. <br><br>
+        Don't miss out on this opportunity to join our Partner Program.<br> We're excited to see all the amazing content that you create with our support. <br><br>
+
+        If you're interested, please take a moment to complete the Registration Form. <br><br>
+
+        For any further inquiries, please email us at For any further inquiries, <br>please email us at renaswebdeveloper@gmail.com </small></small>
+      </p>
+      <button class="banner-button-Coop" id="openRegisterBtn">Play Now</button>
+      <div class="text-background">
+        <img src="../assets/battle_royale_banner_img.png" alt="Landing" class="text-backgroundIMG" />
+      </div>
+    </section>
+    </div>
+    <section class="background">
+      <img src="../assets/BackgroundIMG.png" alt="Landing" class="background-img" />
+    </section>
+    <div class="background-overlay"></div>
+
+
+    <!-- Login/Register form section (initially hidden) -->
+    <div id="overlay" class="overlay hidden"></div>
+    <div id="login-form" class="form-wrapper hidden">
+      <button id="close-login" class="close-btn">&times;</button>
+      <h1 class="logo">The Last Prey</h1>
+      <p class="subtitle">Register to join the survival</p>
+
+      <input type="text" id="inputField3" placeholder="Email" />
+      <input type="text" id="inputField" placeholder="Username" />
+      <input type="password" id="inputField2" placeholder="Password" />
+
+      <button onclick="registerUser()" class="registerButton">Register</button>
+      <p id="message" class="message"></p>
+    </div>
+      <script src="./javascript/scaler.js"></script>
+
+  <script src="../script.js"></script>
+</body>
+</html>

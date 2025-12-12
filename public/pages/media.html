@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>The Last Prey - Media</title>
+  <link rel="stylesheet" href="../style.css"/>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet"/>
+</head>
+<body>
+  <div class="container">
+    <div class="navbar-wrapper">
+      <div id="navbarContainer">
+      <header class="navbar">
+        <div class="navbar-left">
+          <a href="../index.html">
+          <img src="../assets/ava.png" alt="The Last Prey" class="navbar-logo" />
+          </a>  
+          <nav class="navbar-menu">
+            <a href="news.html">News</a>
+            <div class="dropdown">
+              <a class="dropdown-toggle">Game Modes</a>
+              <div class="dropdown-menu">
+                <a href="coop.html">Co-Op</a>
+                <a href="battle-royale.html">Battle Royale</a>
+                <a href="survival.html">Survival</a>
+              </div>
+            </div>
+            <div class="dropdown">
+              <a class="dropdown-toggle">Characters</a>
+              <div class="dropdown-menu">
+                <a href="main-characters.html">Main Characters</a>
+                <a href="zombies.html">Zombies</a>
+                <a href="bosses.html">Bosses</a>
+              </div>
+            </div>
+            <a href="media.html">Media</a>
+            <a href="about.html">About</a>
+          </nav>
+        </div>
+        <div class="navbar-right">
+          <img class="register-button" src="../assets/registerButton.png" id="openRegisterImg"></img>
+          <!-- <button class="icon-btn login" title="Log in">REGISTER</button> -->
+          <a href="#" class="cta-button angled">Download</a>
+        </div>
+      </header>
+    </div>
+    </div>
+    <div id="objectsContainer">
+    <section class="devlogs-section">
+      <h1 class="devlogs-title">Devlog Videos</h1>
+      <div class="sort-controls">
+        <label for="sortSelect">Sort By:</label>
+        <select id="sortSelect" onchange="sortDevlogs()">
+          <option  value="desc" selected>Newest First</option>
+          <option  value="asc">Oldest First</option>
+        </select>
+      </div>
+      <div class="devlogs-grid">
+
+        <div class="devlog-card" id="10">
+          <p class="woy">Watch on YouTube</p>
+          <a href="https://www.youtube.com/watch?v=xvFZjo5PgG0" target="_blank">
+            <img src="https://img.youtube.com/vi/xvFZjo5PgG0/hqdefault.jpg" alt="Devlog Thumbnail">
+          </a>
+          <h2 class="video-title">Devlog #1: Starting The Project</h2>
+        </div>
+        <div class="devlog-card" id="9">
+          <p class="woy">Watch on YouTube</p>
+          <a href="https://www.youtube.com/watch?v=xvFZjo5PgG0" target="_blank">
+            <img src="https://img.youtube.com/vi/xvFZjo5PgG0/hqdefault.jpg" alt="Devlog Thumbnail">
+          </a>
+          <h2 class="video-title">Devlog #1: Starting The Project</h2>
+        </div>
+        <div class="devlog-card" id="8">
+          <p class="woy">Watch on YouTube</p>
+          <a href="https://www.youtube.com/watch?v=xvFZjo5PgG0" target="_blank">
+            <img src="https://img.youtube.com/vi/xvFZjo5PgG0/hqdefault.jpg" alt="Devlog Thumbnail">
+          </a>
+          <h2 class="video-title">Devlog #1: Starting The Project</h2>
+        </div>
+        <div class="devlog-card" id="7">
+          <p class="woy">Watch on YouTube</p>
+          <a href="https://www.youtube.com/watch?v=xvFZjo5PgG0" target="_blank">
+            <img src="https://img.youtube.com/vi/xvFZjo5PgG0/hqdefault.jpg" alt="Devlog Thumbnail">
+          </a>
+          <h2 class="video-title">Devlog #1: Starting The Project</h2>
+        </div>
+        <div class="devlog-card" id="6">
+          <p class="woy">Watch on YouTube</p>
+          <a href="https://www.youtube.com/watch?v=xvFZjo5PgG0" target="_blank">
+            <img src="https://img.youtube.com/vi/xvFZjo5PgG0/hqdefault.jpg" alt="Devlog Thumbnail">
+          </a>
+          <h2 class="video-title">Devlog #1: Starting The Project</h2>
+        </div>
+        <div class="devlog-card" id="5">
+          <p class="woy">Watch on YouTube</p>
+          <a href="https://www.youtube.com/watch?v=xvFZjo5PgG0" target="_blank">
+            <img src="https://img.youtube.com/vi/xvFZjo5PgG0/hqdefault.jpg" alt="Devlog Thumbnail">
+          </a>
+          <h2 class="video-title">Devlog #1: Starting The Project</h2>
+        </div>
+        <div class="devlog-card" id="4">
+          <p class="woy">Watch on YouTube</p>
+          <a href="https://www.youtube.com/watch?v=xvFZjo5PgG0" target="_blank">
+            <img src="https://img.youtube.com/vi/xvFZjo5PgG0/hqdefault.jpg" alt="Devlog Thumbnail">
+          </a>
+          <h2 class="video-title">Devlog #1: Starting The Project</h2>
+        </div>
+        <div class="devlog-card" id="3">
+          <p class="woy">Watch on YouTube</p>
+          <a href="https://www.youtube.com/watch?v=xvFZjo5PgG0" target="_blank">
+            <img src="https://img.youtube.com/vi/xvFZjo5PgG0/hqdefault.jpg" alt="Devlog Thumbnail">
+          </a>
+          <h2 class="video-title">Devlog #1: Starting The Project</h2>
+        </div>
+        <div class="devlog-card" id="2">
+          <p class="woy">Watch on YouTube</p>
+          <a href="https://www.youtube.com/watch?v=fMCN-b0ic_k" target="_blank">
+            <img src="https://img.youtube.com/vi/fMCN-b0ic_k/hqdefault.jpg" alt="Devlog Thumbnail">
+          </a>
+          <h2 class="video-title">Devlog #1: Starting The Project</h2>
+        </div>
+        <div class="devlog-card" id="1">
+          <p class="woy">Watch on YouTube</p>
+          <a href="https://www.youtube.com/watch?v=fMCN-b0ic_k" target="_blank">
+            <img src="https://img.youtube.com/vi/fMCN-b0ic_k/hqdefault.jpg" alt="Devlog Thumbnail">
+          </a>
+          <h2 class="video-title">Devlog #1: Starting The Project</h2>
+        </div>
+        </div>
+      </section>
+      </div>
+    </div>
+    <section class="background">
+      <img src="../assets/BackgroundIMG.png" alt="Landing" class="background-img" />
+    </section>
+    <div class="background-overlay"></div>
+    
+
+    <!-- Login/Register form section (initially hidden) -->
+    <div id="overlay" class="overlay hidden"></div>
+    <div id="login-form" class="form-wrapper hidden">
+      <button id="close-login" class="close-btn">&times;</button>
+      <h1 class="logo">The Last Prey</h1>
+      <p class="subtitle">Register to join the survival</p>
+
+      <input type="text" id="inputField3" placeholder="Email" />
+      <input type="text" id="inputField" placeholder="Username" />
+      <input type="password" id="inputField2" placeholder="Password" />
+
+      <button onclick="registerUser()" class="registerButton">Register</button>
+      <p id="message" class="message"></p>
+    </div>
+
+  <!-- </div> -->
+  <script>
+    function sortDevlogs() {
+      const sortOrder = document.getElementById("sortSelect").value;
+      const grid = document.querySelector(".devlogs-grid");
+      const cards = Array.from(grid.querySelectorAll(".devlog-card"));
+
+      cards.sort((a, b) => {
+        const idA = parseInt(a.id);
+        const idB = parseInt(b.id);
+        return sortOrder === "asc" ? idA - idB : idB - idA;
+      });
+
+      cards.forEach(card => grid.appendChild(card));
+    }
+  function scalePage() {
+    if (window.innerWidth >= 1920) return;
+    const wrapper = document.getElementById('objectsContainer');
+    const devlogSection = document.querySelector('.devlogs-section');
+
+    if (window.innerWidth <= 600) {
+      // Reset scale & spacing on small screens
+      wrapper.style.transform = 'scale(1)';
+      wrapper.style.transformOrigin = 'top left';
+      document.body.style.height = 'auto';
+      devlogSection.style.paddingTop = '100px';
+      devlogSection.style.marginBottom = '0px';
+      return;
+    }
+
+    const baseWidth = 1920;
+    const currentWidth = window.innerWidth;
+    const scale = Math.min(1, currentWidth / baseWidth);
+
+    // Apply scale with transform origin left top
+    wrapper.style.transformOrigin = 'top left';
+    wrapper.style.transform = `scale(${scale})`;
+
+    // wrapper.style.margin = '0 auto';
+
+    const scaledHeight = wrapper.offsetHeight * scale;
+    document.body.style.height = `${scaledHeight}px`;
+
+    const basePadding = 100;
+    const scaledPadding = basePadding / scale;
+    devlogSection.style.paddingTop = `${scaledPadding}px`;
+
+    const pullUp = (1 - scale) * 1624; 
+    devlogSection.style.marginBottom = `-${pullUp}px`;
+  }
+
+  window.addEventListener('load', scalePage);
+  window.addEventListener('resize', scalePage);
+
+  </script>
+  <script src="./javascript/scaler.js"></script>
+  <script src="../script.js"></script>
+</body>
+</html>

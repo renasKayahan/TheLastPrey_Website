@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>The Last Prey</title>
+  <link rel="stylesheet" href="style.css"/>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet"/>
+</head>
+<body>
+  <div class="container">
+    <div class="navbar-wrapper">
+    <div id="navbarContainer">
+      <header class="navbar">
+        <div class="navbar-left">
+          <a href="index.html">
+          <img src="assets/ava.png" alt="The Last Prey" class="navbar-logo" />
+          </a>  
+          <nav class="navbar-menu">
+            <a href="pages/news.html">News</a>
+            <div class="dropdown">
+              <a class="dropdown-toggle">Game Modes</a>
+              <div class="dropdown-menu">
+                <a href="pages/coop.html">Co-Op</a>
+                <a href="pages/battle-royale.html">Battle Royale</a>
+                <a href="pages/survival.html">Survival</a>
+              </div>
+            </div>
+            <div class="dropdown">
+              <a class="dropdown-toggle">Characters</a>
+              <div class="dropdown-menu">
+                <a href="pages/main-characters.html">Main Characters</a>
+                <a href="pages/zombies.html">Zombies</a>
+                <a href="pages/bosses.html">Bosses</a>
+              </div>
+            </div>
+            <a href="pages/media.html">Media</a>
+            <a href="pages/about.html">About</a>
+          </nav>
+        </div>
+        <div class="navbar-right">
+          <img class="register-button" src="./assets/registerButton.png" id="openRegisterImg"></img>
+          <!-- <button class="icon-btn login" title="Log in">REGISTER</button> -->
+          <a href="#" class="cta-button angled">Download</a>
+        </div>
+      </header>
+    </div>
+    </div>
+    <section class="background">
+      <img src="assets/BackgroundIMG.png" alt="Landing" class="background-img" />
+    </section>
+    <div class="background-overlay"></div>
+    <section class="banner">
+      <img src="assets/BannerImage2.png" alt="Landing" class="landing-img" />
+      <button class="banner-button" id="openRegisterBtn">Play Now</button>
+    </section>
+
+      <!-- <img src="assets/background2.png" alt="Zombie Banner" class="" />2 -->
+    <!-- Section 3: Image & Text Block -->
+    <section class="section" id="section-one">
+      <div class="section-content">
+        <img src="assets/block1.png" alt="Feature 1" />
+        <div class="text-block">
+          <h2>Enter the Outbreak</h2>
+          <p>Discover how the plague began and what lies beneath the city ruins.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section 4: Image & Text Block -->
+    <section class="section" id="section-two">
+      <div class="section-content reverse">
+        <img src="assets/block2_1.png" alt="Feature 2" />
+        <div class="text-block">
+          <h2>Survive the Horde</h2>
+          <p>Team up, fight smart, and adapt to survive the onslaught of the undead.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section 5: Image & Text Block -->
+    <section class="section" id="section-three">
+      <div class="section-content">
+        <img src="assets/block3.png" alt="Feature 3" />
+        <div class="text-block">
+          <h2>Gear Up</h2>
+          <p>Unlock powerful weapons and custom gear to dominate the battlefield.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Login/Register form section (initially hidden) -->
+  <div id="overlay" class="overlay hidden"></div>
+    <div id="login-form" class="form-wrapper hidden">
+      <button id="close-login" class="close-btn">&times;</button>
+      <h1 class="logo">The Last Prey</h1>
+      <p class="subtitle">Register to join the survival</p>
+
+      <input type="text" id="inputField3" placeholder="Email" />
+      <input type="text" id="inputField" placeholder="Username" />
+      <input type="password" id="inputField2" placeholder="Password" />
+
+      <button onclick="registerUser()" class="registerButton">Register</button>
+      <p id="message" class="message"></p>
+    </div>
+
+  </div>
+    <script src="./pages/javascript/scaler.js"></script>
+
+  <script src="script.js"></script>
+</body>
+</html>
